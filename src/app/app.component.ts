@@ -1,14 +1,20 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ApiService } from './services/api.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  providers: [],
 })
 export class AppComponent {
-  title = 'teste-ssr';
+  serverStatus!: string;
+
+  constructor(private api: ApiService) {
+    this.api.checkHealth().subscribe((res) => (this.serverStatus = res.server));
+  }
 }
