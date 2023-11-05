@@ -1,21 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { HealthComponent } from './health.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing'
+import { HealthComponent } from './health.component'
 
 describe('HealthComponent', () => {
-  let component: HealthComponent;
-  let fixture: ComponentFixture<HealthComponent>;
+  let component: HealthComponent
+  let fixture: ComponentFixture<HealthComponent>
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HealthComponent]
-    });
-    fixture = TestBed.createComponent(HealthComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+      imports: [HealthComponent, HttpClientTestingModule],
+    })
+    fixture = TestBed.createComponent(HealthComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})
