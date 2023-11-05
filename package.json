@@ -13,7 +13,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng run a16n10ssr-template:serve-ssr",
-    "serve:ssr": "node dist/a16n10ssr-template/server/main.js",
+    "serve:ssr": "node dist/server/main.js",
     "build:ssr": "ng build && ng run a16n10ssr-template:server",
     "prerender": "ng run a16n10ssr-template:prerender"
   },
