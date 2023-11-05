@@ -1,6 +1,6 @@
 # Angular 16 / Nest 10 / SSR - Template
 
-This project is a template for building websites with serverside rendering, using Angular 16 and NestJS 10 as a base.
+This project is a template for building websites with server-side rendering, using Angular 16 and NestJS 10 as a base.
 
 ## Development server
 
