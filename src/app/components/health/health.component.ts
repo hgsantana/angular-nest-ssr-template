@@ -10,15 +10,15 @@ import { ApiService } from 'src/app/services/api.service'
   styleUrls: ['./health.component.scss'],
 })
 export class HealthComponent {
-  serverStatus = 'loading'
+  apiStatus = 'loading'
   constructor(api: ApiService) {
     api.checkHealth().subscribe({
       next: (health) => {
-        this.serverStatus = health.server
+        this.apiStatus = health.api
       },
       error: (err) => {
         console.error(err)
-        this.serverStatus = 'OFF'
+        this.apiStatus = 'OFF'
       },
     })
   }

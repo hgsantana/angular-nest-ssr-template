@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common'
 import { AngularUniversalModule } from '@nestjs/ng-universal'
 import { join } from 'path'
 import AppServerModule from '../src/main.server'
-import { HealthController } from './health/health.controller'
+import { HealthController } from './v1/health/health.controller'
 
 @Module({
   imports: [

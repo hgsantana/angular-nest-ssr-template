@@ -17,6 +17,6 @@ describe('HealthController', () => {
   })
 
   it(`server status should return OK`, () => {
-    expect(controller.healthCheck().server).toBe('OK')
+    expect(controller.healthCheck().api).toBe('OK')
   })
 })
