@@ -1,7 +1,6 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { ApiService } from './services/api.service';
+import { CommonModule } from '@angular/common'
+import { Component } from '@angular/core'
+import { RouterOutlet } from '@angular/router'
 
 @Component({
   selector: 'app-root',
@@ -11,10 +10,4 @@ import { ApiService } from './services/api.service';
   styleUrls: ['./app.component.scss'],
   providers: [],
 })
-export class AppComponent {
-  serverStatus!: string;
-
-  constructor(private api: ApiService) {
-    this.api.checkHealth().subscribe((res) => (this.serverStatus = res.server));
-  }
-}
+export class AppComponent {}
