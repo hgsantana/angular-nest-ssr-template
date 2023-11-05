@@ -1,5 +1,5 @@
 {
-  "name": "a16n10ssr-template",
+  "name": "angular-nest-ssr-template",
   "version": "1.0.0",
   "author": {
     "name": "Hugo Sant'Ana",
@@ -14,10 +14,10 @@
     "test": "npm run test:browser && npm run test:server",
     "test:browser": "echo 'Running browser tests...\\n' && ng test",
     "test:server": "echo '\\nRunning server tests...\\n' && jest",
-    "dev:ssr": "ng run a16n10ssr-template:serve-ssr",
+    "dev:ssr": "ng run angular-nest-ssr-template:serve-ssr",
     "serve:ssr": "node dist/server/main.js",
-    "build:ssr": "ng build && ng run a16n10ssr-template:server",
-    "prerender": "ng run a16n10ssr-template:prerender"
+    "build:ssr": "ng build && ng run angular-nest-ssr-template:server",
+    "prerender": "ng run angular-nest-ssr-template:prerender"
   },
   "private": true,
   "dependencies": {

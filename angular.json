@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "a16n10ssr-template": {
+    "angular-nest-ssr-template": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "a16n10ssr-template:build:production"
+              "browserTarget": "angular-nest-ssr-template:build:production"
             },
             "development": {
-              "browserTarget": "a16n10ssr-template:build:development"
+              "browserTarget": "angular-nest-ssr-template:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "a16n10ssr-template:build"
+            "browserTarget": "angular-nest-ssr-template:build"
           }
         },
         "test": {
@@ -139,12 +139,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "a16n10ssr-template:build:development",
-              "serverTarget": "a16n10ssr-template:server:development"
+              "browserTarget": "angular-nest-ssr-template:build:development",
+              "serverTarget": "angular-nest-ssr-template:server:development"
             },
             "production": {
-              "browserTarget": "a16n10ssr-template:build:production",
-              "serverTarget": "a16n10ssr-template:server:production"
+              "browserTarget": "angular-nest-ssr-template:build:production",
+              "serverTarget": "angular-nest-ssr-template:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -156,12 +156,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "a16n10ssr-template:build:production",
-              "serverTarget": "a16n10ssr-template:server:production"
+              "browserTarget": "angular-nest-ssr-template:build:production",
+              "serverTarget": "angular-nest-ssr-template:server:production"
             },
             "development": {
-              "browserTarget": "a16n10ssr-template:build:development",
-              "serverTarget": "a16n10ssr-template:server:development"
+              "browserTarget": "angular-nest-ssr-template:build:development",
+              "serverTarget": "angular-nest-ssr-template:server:development"
             }
           },
           "defaultConfiguration": "production"
