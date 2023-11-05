@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "teste-ssr": {
+    "a16n10ssr-template": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/teste-ssr/browser",
+            "outputPath": "dist/a16n10ssr-template/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "teste-ssr:build:production"
+              "browserTarget": "a16n10ssr-template:build:production"
             },
             "development": {
-              "browserTarget": "teste-ssr:build:development"
+              "browserTarget": "a16n10ssr-template:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "teste-ssr:build"
+            "browserTarget": "a16n10ssr-template:build"
           }
         },
         "test": {
@@ -93,7 +93,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/teste-ssr/server",
+            "outputPath": "dist/a16n10ssr-template/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
             "inlineStyleLanguage": "scss",
@@ -124,12 +124,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "teste-ssr:build:development",
-              "serverTarget": "teste-ssr:server:development"
+              "browserTarget": "a16n10ssr-template:build:development",
+              "serverTarget": "a16n10ssr-template:server:development"
             },
             "production": {
-              "browserTarget": "teste-ssr:build:production",
-              "serverTarget": "teste-ssr:server:production"
+              "browserTarget": "a16n10ssr-template:build:production",
+              "serverTarget": "a16n10ssr-template:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -141,12 +141,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "teste-ssr:build:production",
-              "serverTarget": "teste-ssr:server:production"
+              "browserTarget": "a16n10ssr-template:build:production",
+              "serverTarget": "a16n10ssr-template:server:production"
             },
             "development": {
-              "browserTarget": "teste-ssr:build:development",
-              "serverTarget": "teste-ssr:server:development"
+              "browserTarget": "a16n10ssr-template:build:development",
+              "serverTarget": "a16n10ssr-template:server:development"
             }
           },
           "defaultConfiguration": "production"

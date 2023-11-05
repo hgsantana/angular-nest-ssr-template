@@ -1,17 +1,17 @@
 {
-  "name": "teste-ssr",
+  "name": "a16n10ssr-template",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "npm run build:ssr",
+    "build:browser": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run teste-ssr:serve-ssr",
-    "serve:ssr": "node dist/teste-ssr/server/main.js",
-    "build:ssr": "ng build && ng run teste-ssr:server",
-    "prerender": "ng run teste-ssr:prerender",
-    "prebuild:ssr": "ngcc"
+    "dev:ssr": "ng run a16n10ssr-template:serve-ssr",
+    "serve:ssr": "node dist/a16n10ssr-template/server/main.js",
+    "build:ssr": "ng build && ng run a16n10ssr-template:server",
+    "prerender": "ng run a16n10ssr-template:prerender"
   },
   "private": true,
   "dependencies": {

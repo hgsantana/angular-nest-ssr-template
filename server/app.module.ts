@@ -8,7 +8,7 @@ import { HealthController } from './health/health.controller'
   imports: [
     AngularUniversalModule.forRoot({
       bootstrap: AppServerModule,
-      viewsPath: join(process.cwd(), 'dist/teste-ssr/browser'),
+      viewsPath: join(process.cwd(), 'dist/a16n10ssr-template/browser'),
     }),
   ],
   controllers: [HealthController],
