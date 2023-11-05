@@ -22,12 +22,22 @@ Run `npm run build` to build the project. The build artifacts will be stored in 
 
 ## Running unit tests
 
-Run `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm run test` to execute the unit tests via `Karma` for Angular and `Jest` for NestJS.
 
-## Running end-to-end tests
+## Server port
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+The server runs on port 4200 by default for local development. You can give another port through the `PORT` environment variable. Most cloud providers will set the right port for you automatically.
 
-## Further help
+## API URL
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+API URL must be set within `src/environments/environment.ts` and `src/environments/environment.development.ts`. We assume `localhost:4200/api` for local development, but you need to provide the right DNS/IP and port for production (eg.: `https://yourdomain.com/api`). It must be done this way for server-side rendering to work. **You can't use relative paths like `/api`**.
+
+## Production running
+
+You can use `dist` folder alone in your production server. And you can call `node dist/server/main.js` from wherever folder you are in prompt, assuming folders `server` and `browser` are siblings as they are in `dist` folder after build.
+
+Example:
+
+- create your server folder: `mkdir /opt/example`
+- copy `dist` folder content (`server` and `browser` folders) to your server folder: `cp -r dist/* /opt/example`
+- run the server with port 8080: `PORT=8080 node /opt/example/server/main.js`
