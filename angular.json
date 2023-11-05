@@ -93,7 +93,9 @@
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
-            "scripts": []
+            "scripts": [],
+            "watch": false,
+            "browsers": "ChromeHeadless"
           }
         },
         "server": {
