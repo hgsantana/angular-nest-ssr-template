@@ -2,6 +2,8 @@
 
 This project is a template for building websites with server-side rendering, using Angular 16 and NestJS 10 as a base.
 
+## Project Localization
+
 The project is localized to Brazil, with currency, language and date configuration. If you want to use it in another setup/language, remember to change the `<html>` tag in `index.html` and the configuration in `src/app/app.config.ts`.
 
 ## Angular files (frontend)
