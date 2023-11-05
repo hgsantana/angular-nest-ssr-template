@@ -1,6 +1,10 @@
 {
   "name": "a16n10ssr-template",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hugo Sant'Ana",
+    "url": "https://www.linkedin.com/in/hugo-sant-ana-4b840b79/"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

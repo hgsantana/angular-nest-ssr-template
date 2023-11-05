@@ -2,6 +2,16 @@
 
 This project is a template for building websites with server-side rendering, using Angular 16 and NestJS 10 as a base.
 
+The project is localized to Brazil, with currency, language and date configuration. If you want to use it in another setup/language, remember to change the `<html>` tag in `index.html` and the configuration in `src/app/app.config.ts`.
+
+## Angular
+
+The Angular (frontend) files are in `src` folder.
+
+## NestJS
+
+The NestJS (backend) files are in `server` folder.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
