@@ -1,6 +1,6 @@
-# TesteSsr
+# Angular 16 / Nest 10 / SSR - Template
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
+This project is a template for building websites with serverside rendering, using Angular 16 and NestJS 10 as a base.
 
 ## Development server
 
